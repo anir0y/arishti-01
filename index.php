@@ -5,7 +5,7 @@ include("dbconf.php");
 ini_set('display_errors', 1);
 ?>
 <html>
-<head><title>fakebook </title>
+<head><title>SQL LAB </title>
 </head>
 <body>
 <style>
@@ -59,7 +59,7 @@ if (!empty($_REQUEST['uid'])) {
 $username = ($_REQUEST['uid']);
 $pass = $_REQUEST['password'];
 
-$q = "SELECT * FROM users where username='".$username."' AND password = '".md5($pass)."'" ;
+$q = "SELECT * FROM userlogin where username='".$username."' AND password = '".md5($pass)."'" ;
 echo $q;
 	if (!mysqli_query($con,$q))
 	{

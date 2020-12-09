@@ -84,14 +84,18 @@ body {
 </style>
 
 <div class="menu">
-  <a href="https://arishti.live">Arishti Home</a>
+  <a href="logout.php">Log Out</a>
   <a href="git">Projects</a>
 </div>
 <div class="about">
   <div class="inner-about">
+    <?php 
+    echo "<h2> Your userID is: " . $_SESSION['username'] . "</h2>";
+    echo "Your Unique Flad ID: " .sha1($_SESSION['username']). " !" ;
+    ?>
+    <br><hr><br>
     <h1>You Did it!</h1><br>
-    <p>You Hacked this Website Successfully</p>
-    <em>You're a Hacker now, go Buy a Black Hoodie 👻</em>
+    <p>You Completed this task Successfully</p>
   </div>
 </div>
  
