@@ -1,14 +1,13 @@
 {
   "summary": {
     "title": "Web-application",
-    "owner": "anir0y",
-    "description": "web-app treat model"
+    "owner": "mentor"
   },
   "detail": {
     "contributors": [],
     "diagrams": [
       {
-        "title": "web-flow",
+        "title": "web",
         "thumbnail": "./public/content/images/thumbnail.jpg",
         "id": 0
       }
